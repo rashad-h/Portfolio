@@ -6,39 +6,15 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "Django", "Flask","Vue.js", "Python", "JavaScript", "HTML5", "CSS3", "SQL", "RESTful API"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Docker", "GitHub Actions", "AWS", "Linux", "CI/CD Pipelines", "Automation Tools"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "LLaMA", "Unsloth", "LoRA", "Hugging Face", "OpenAI API", "Weights & Biases", "CNNs",
 ];
 
 function Expertise() {
@@ -48,9 +24,20 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
+                    <FontAwesomeIcon icon={faPython} size="3x"/>
+                    <h3>Machine Learning & Generative AI</h3>
+                    <p>With expertise in large language models and generative AI, I develop custom applications for interactive and retrieval-based AI tasks. My skills include data preprocessing, fine-tuning models, and engineering effective prompts for high-quality AI outputs.</p>
+                    <div className="flex-chips">
+                        <span className="chip-title">Tech stack:</span>
+                        {labelsThird.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
+                </div>
+                <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <p>I build responsive and interactive web applications, combining robust backend architectures with intuitive frontend interfaces. My experience spans designing and deploying full-stack solutions, integrating APIs, and optimizing UIs to ensure a seamless user experience.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -61,8 +48,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <h3>DevOps</h3>
+                    <p>I implement DevOps best practices for scalable and efficient application deployment, including automated workflows, CI/CD pipelines, and deployment optimizations that ensure reliable production environments.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -71,17 +58,7 @@ function Expertise() {
                     </div>
                 </div>
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

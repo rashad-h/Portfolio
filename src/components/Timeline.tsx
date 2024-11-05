@@ -15,56 +15,58 @@ function Timeline() {
       <div className="items-container">
         <h1>Career History</h1>
         <VerticalTimeline>
+            <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2024 - present"
+            iconStyle={my_style}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Playtech, London</h4>
+            <p>
+            Contributing to the development of a large-scale, high-performance online platforms. 
+            </p>
+          </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="2020 - 2024"
             iconStyle={my_style}
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Bachelor of Computer Science (Honours)</h3>
+            <h4 className="vertical-timeline-element-subtitle">University of Leeds, UK</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Overall Average: 80%
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="2022 - 2023"
             iconStyle={my_style}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Ecobee, Leeds, UK</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+            Played a pivotal role in the server backend development of recently launched smart doorbell camera. 
             </p>
           </VerticalTimelineElement>
+          
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="2018 - 2020"
             iconStyle={my_style}
             icon={<FontAwesomeIcon icon={faSchool} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">A - Levels</h3>
+            <h4 className="vertical-timeline-element-subtitle">Abbey College Cambridge, UK</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+                Mathematics: A*, Further Mathematics: A, Physics: A. 
             </p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={my_style}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
-            </p>
-          </VerticalTimelineElement>
+          
         </VerticalTimeline>
       </div>
     </div>
