@@ -6,11 +6,11 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "Django", "Flask","Vue.js", "Python", "JavaScript", "HTML5", "CSS3", "SQL", "RESTful API"
+    "Go", "TypeScript", "Python", "Django", "Flask", "Vue.js", "AWS", "PostgreSQL", "RESTful APIs"
 ];
 
 const labelsSecond = [
-    "Docker", "GitHub Actions", "AWS", "Linux", "CI/CD Pipelines", "Automation Tools"
+    "Docker", "GitHub Actions", "AWS", "GCP", "Linux", "CI/CD Pipelines", "Kubernetes"
 ];
 
 const labelsThird = [
@@ -26,7 +26,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>Machine Learning & Generative AI</h3>
-                    <p>With expertise in large language models and generative AI, I develop custom applications for interactive and retrieval-based AI tasks. My skills include data preprocessing, fine-tuning models, and engineering effective prompts for high-quality AI outputs.</p>
+                    <p>With expertise in large language models and generative AI, I build custom applications for interactive storytelling, retrieval-based AI, and fine-tuned model pipelines. My skills include data preprocessing, fine-tuning with LoRA/Unsloth, and engineering effective prompts for high-quality AI outputs.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
@@ -36,8 +36,8 @@ function Expertise() {
                 </div>
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I build responsive and interactive web applications, combining robust backend architectures with intuitive frontend interfaces. My experience spans designing and deploying full-stack solutions, integrating APIs, and optimizing UIs to ensure a seamless user experience.</p>
+                    <h3>Backend & Full Stack Engineering</h3>
+                    <p>I design and build high-throughput backend services and distributed systems, including payment APIs and sports betting platforms handling millions of daily transactions. My stack spans Go, Python, and TypeScript backends with cloud-native deployment on AWS, combined with full-stack experience building responsive frontends.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -48,8 +48,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps</h3>
-                    <p>I implement DevOps best practices for scalable and efficient application deployment, including automated workflows, CI/CD pipelines, and deployment optimizations that ensure reliable production environments.</p>
+                    <h3>DevOps & Cloud</h3>
+                    <p>I implement DevOps best practices for scalable, cloud-native deployment, including automated CI/CD workflows, containerisation, and multi-cloud infrastructure across AWS and GCP that ensure reliable production environments.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -58,7 +58,7 @@ function Expertise() {
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </div>
