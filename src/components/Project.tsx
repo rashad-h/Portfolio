@@ -18,20 +18,11 @@ interface ProjectData {
 
 const projects: ProjectData[] = [
     {
-        title: "Interactive Bedtime Story Generator",
-        description: "AI-powered story generation platform enabling users to guide multi-stage interactive narratives. Integrated Photo Maker v2 for personalised visual scenes from user-provided images, with content-safety filters to ensure child-appropriate output.",
-        techTags: ["Django", "Vue.js", "AWS", "OpenAI API"],
-        link: "https://rashad-h.github.io/AI_Story_Teller_Frontend/",
-        banner: "📖",
-        bannerBg: "linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)",
-    },
-    {
-        title: "LEGO Minifigure Generator",
-        description: "AI system that generates custom LEGO minifigures using a fine-tuned LLaMA 8B model trained on a self-scraped dataset of 16,000+ minifigures. Implements a retrieval and scoring mechanism to match generated descriptions with closest part sets.",
-        techTags: ["LLaMA 8B", "LoRA", "Unsloth", "16K+ Dataset"],
-        link: "https://github.com/rashad-h/LEGO-Minifig-Generator",
-        banner: "🧱",
-        bannerBg: "linear-gradient(135deg, #f7971e, #ffd200)",
+        title: "Surgical Scene Understanding",
+        description: "Deep learning model to enhance surgical scene understanding in laparoscopic hysterectomy procedures using image segmentation, improving intraoperative awareness for surgical teams.",
+        techTags: ["Deep Learning", "CNNs", "Python", "PyTorch"],
+        link: "https://github.com/rashad-h/Surgical-Scene-Understanding-Laparoscopic/blob/main/code.ipynb",
+        image: image1,
     },
     {
         title: "LiquiDOT",
@@ -42,14 +33,6 @@ const projects: ProjectData[] = [
         note: "Hackathon Winner — $13K Prize (Polkadot & EasyA)",
     },
     {
-        title: "GapGrabber App",
-        description: "Agentic cancellation management system that monitors appointment availability and automatically secures earlier slots on behalf of users, using an intelligent agent-based architecture.",
-        techTags: ["TypeScript", "Agentic AI", "Node.js"],
-        link: "https://github.com/rashad-h/GapGrabber_App",
-        banner: "🔍",
-        bannerBg: "linear-gradient(135deg, #134e5e, #71b280)",
-    },
-    {
         title: "Retro Game AI Generator",
         description: "AI system for procedurally generating retro-style games, leveraging generative models to produce game assets, levels, and mechanics in the style of classic arcade and console games.",
         techTags: ["Python", "Generative AI", "Game Dev"],
@@ -58,11 +41,28 @@ const projects: ProjectData[] = [
         bannerBg: "linear-gradient(135deg, #200122, #6f0000)",
     },
     {
-        title: "Surgical Scene Understanding",
-        description: "Deep learning model to enhance surgical scene understanding in laparoscopic hysterectomy procedures using image segmentation, improving intraoperative awareness for surgical teams.",
-        techTags: ["Deep Learning", "CNNs", "Python", "PyTorch"],
-        link: "https://github.com/rashad-h/Surgical-Scene-Understanding-Laparoscopic/blob/main/code.ipynb",
-        image: image1,
+        title: "LEGO Minifigure Generator",
+        description: "AI system that generates custom LEGO minifigures using a fine-tuned LLaMA 8B model trained on a self-scraped dataset of 16,000+ minifigures. Implements a retrieval and scoring mechanism to match generated descriptions with closest part sets.",
+        techTags: ["LLaMA 8B", "LoRA", "Unsloth", "16K+ Dataset"],
+        link: "https://github.com/rashad-h/LEGO-Minifig-Generator",
+        banner: "🧱",
+        bannerBg: "linear-gradient(135deg, #f7971e, #ffd200)",
+    },
+    {
+        title: "Interactive Bedtime Story Generator",
+        description: "AI-powered story generation platform enabling users to guide multi-stage interactive narratives. Integrated Photo Maker v2 for personalised visual scenes from user-provided images, with content-safety filters to ensure child-appropriate output.",
+        techTags: ["Django", "Vue.js", "AWS", "OpenAI API"],
+        link: "https://rashad-h.github.io/AI_Story_Teller_Frontend/",
+        banner: "📖",
+        bannerBg: "linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)",
+    },
+    {
+        title: "GapGrabber App",
+        description: "Agentic cancellation management system that monitors appointment availability and automatically secures earlier slots on behalf of users, using an intelligent agent-based architecture.",
+        techTags: ["TypeScript", "Agentic AI", "Node.js"],
+        link: "https://github.com/rashad-h/GapGrabber_App",
+        banner: "🔍",
+        bannerBg: "linear-gradient(135deg, #134e5e, #71b280)",
     },
 ];
 
