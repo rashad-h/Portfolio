@@ -147,6 +147,19 @@ p, a, h1, h2, h3, h4, h5, label, button {
   .flex-chips .chip-title {
     color: #0d1116;
   }
+
+  .project-note {
+    color: #8b6914 !important;
+  }
+
+  .project-link-btn {
+    border-color: rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.06);
+      color: #002858 !important;
+    }
+  }
 }
 
 @media screen {
